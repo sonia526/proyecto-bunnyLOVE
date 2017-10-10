@@ -1,0 +1,104 @@
+ $font-bonny: 'Baloo Paaji', cursive;
+ $font-promp: 'Prompt', sans-serif;
+ $color-principal:#037f99;
+body{
+	margin:0;
+	padding:0px;
+	font-family:$font-bonny;
+   }
+/*hero*/
+.header{
+	padding:20px;
+}
+/*seccion unooo*/
+#seccion-uno{
+	margin-top:0px;
+  background-image: url(../img/img-1.jpg);
+  heigh:300px;
+  
+  background-size: cover;
+  background-position: center;
+.sombra{
+  background-color: rgba(0, 125, 157, 0.8);
+  padding: 110px 20px 250px 330px;
+.text-justify{
+	color: white;
+	display: flex;
+	text-align: center;
+	justify-content:center;
+	margin-top:80px;
+	font-size:20px;
+     }
+.titulo{
+	font-size:100px;
+	color: #FA8072;
+	display: flex;
+	text-align: center;
+	justify-content:center;
+      }
+   }
+}
+// hero seccion
+/* seccion-dos*/
+.seccion-dos{
+    background-color:orange;
+.grilla-decuatro{
+	margin-top:25px;
+	margin-bootom:25px;    
+.caption{
+	background-color:skyblue;
+       }
+.cajilla-imagen{
+	margin-top:0;
+	background-color:#037f99;
+	margin-bootom:25px;
+      }
+    }
+ }
+
+/*tercera section*/
+.seccion-tres{
+	 @extend .cajilla-imagen;
+	 $color-principal:#037f99;
+iframe{
+	width:100%;
+	height:400px;
+    }
+
+#input-caja{
+	background-color:silver;
+	border-radius:5px;
+}
+
+.input{
+	padding:20px;
+	margin-top:10px;
+	margin-bootom:15px;
+
+    }
+}
+// esta parte no necesita sass
+#seccion-cuatro{
+	background-image:url(../img/bunny-head.png);
+	height:15vh;
+	background-size:15%;
+	padding:10px;
+}
+@media (max-width: 1200px){
+	#seccion-cuatro{
+		height:5vh;
+	}
+}
+footer{
+	text-align:center;
+	background-color:$color-principal;
+	padding:20px;
+	color:white;
+}
+
+
+
+
+
+
+
