@@ -1,62 +1,121 @@
-body {
+* {
   margin: 0;
-  padding: 0px;
+  padding: 0;
   font-family: "Baloo Paaji", cursive; }
 
 /*hero*/
-.header {
-  padding: 20px; }
+#menu {
+  background-color: #037f99;
+  color: white; }
+  #menu .lista {
+    color: white; }
 
 /*seccion unooo*/
+.logo1, .logo2 {
+  display: inline-block; }
+
+.logo1 {
+  margin-left: 50px;
+  font-size: 50px; }
+
+.logo2 {
+  font-size: 50px;
+  color: #FA8072; }
+
+@media only screen and (max-width: 500px) {
+  .logo1 {
+    font-size: 30px; }
+
+  .logo2 {
+    font-size: 30px; }
+
+  .sombra {
+    width: 300px;
+    margin: auto; } }
 #seccion-uno {
-  margin-top: 0px;
+  margin-top: -25px;
   background-image: url(../img/img-1.jpg);
-  heigh: 300px;
+  height: 400px;
   background-size: cover;
-  background-position: center; }
-  #seccion-uno .sombra {
-    background-color: rgba(0, 125, 157, 0.8);
-    padding: 110px 20px 250px 330px; }
-    #seccion-uno .sombra .text-justify {
-      color: white;
-      display: flex;
-      text-align: center;
-      justify-content: center;
-      margin-top: 80px;
-      font-size: 20px; }
-    #seccion-uno .sombra .titulo {
-      font-size: 100px;
-      color: #FA8072;
-      display: flex;
-      text-align: center;
-      justify-content: center; }
+  background-position: center no repeat; }
+
+.sombra {
+  background-color: rgba(0, 125, 157, 0.8);
+  padding: 40px;
+  width: 90%;
+  box-sizing: border-box;
+  height: auto;
+  margin: auto; }
+
+.sub-titulo {
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 80px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-family: cursive !important; }
+
+.titulo {
+  font-size: 90px;
+  color: #FA8072;
+  display: flex;
+  text-align: center;
+  justify-content: center; }
 
 /* seccion-dos*/
+.titulo__dos {
+  color: #FA8072;
+  font-size: 20px; }
+
+.parrafo__dos {
+  color: white;
+  font-size: 20px;
+  padding: 15px; }
+
 .seccion-dos {
-  background-color: orange; }
+  background-color: white; }
   .seccion-dos .grilla-decuatro {
     margin-top: 25px;
     margin-bootom: 25px; }
     .seccion-dos .grilla-decuatro .caption {
       background-color: skyblue; }
-    .seccion-dos .grilla-decuatro .cajilla-imagen, .seccion-dos .grilla-decuatro .seccion-tres {
+    .seccion-dos .grilla-decuatro .cajilla-imagen {
       margin-top: 0;
       background-color: #037f99;
       margin-bootom: 25px; }
 
 /*tercera section*/
-.seccion-tres iframe {
-  width: 100%;
-  height: 400px; }
-.seccion-tres #input-caja {
-  background-color: silver;
-  border-radius: 5px; }
-.seccion-tres .input {
-  padding: 20px;
-  margin-top: 10px;
-  margin-bootom: 15px; }
+.cajas-azul-claro {
+  background-color: #ecf7fb; }
+
+.titulo-tres {
+  font-size: 30px;
+  color: #FA8072; }
+
+.sub-titulo-tres {
+  font-size: 20px;
+  padding: 12px; }
+
+.seccion-tres {
+  background-color: #037f99; }
+  .seccion-tres iframe {
+    width: 100%;
+    height: 400px; }
+  .seccion-tres #input-caja {
+    background-color: #ECF7FB;
+    border-radius: 5px;
+    padding: 10px; }
+  .seccion-tres .input {
+    width: 300px;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px; }
 
 #seccion-cuatro {
+  margin-top: 10px;
   background-image: url(../img/bunny-head.png);
   height: 15vh;
   background-size: 15%;
@@ -70,5 +129,10 @@ footer {
   background-color: #037f99;
   padding: 20px;
   color: white; }
+
+.div-footer-rosa {
+  background-color: #FA8072;
+  height: 1vh;
+  position: static; }
 
 /*# sourceMappingURL=main.css.map */
