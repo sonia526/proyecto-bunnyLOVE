@@ -1,7 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Baloo Paaji", cursive; }
+  font-family: "Baloo Paaji", cursive;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 /*hero*/
 #menu {
@@ -9,6 +12,8 @@
   color: white; }
   #menu .lista {
     color: white; }
+    #menu .lista #li-derecha {
+      padding: 50px; }
 
 /*seccion unooo*/
 .logo1, .logo2 {
@@ -22,7 +27,14 @@
   font-size: 50px;
   color: #FA8072; }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1000px) {
+  .logo1 {
+    font-size: 30px;
+    margin: 0px; }
+
+  .logo2 {
+    font-size: 30px; } }
+@media only screen and (max-width: 700px) {
   .logo1 {
     font-size: 30px; }
 
@@ -30,22 +42,50 @@
     font-size: 30px; }
 
   .sombra {
-    width: 300px;
-    margin: auto; } }
+    width: 320px;
+    margin: auto;
+    font-size: 20px; }
+
+  h1.titulo {
+    font-size: 50px; }
+
+  div.sub-titulo {
+    font-size: 20px;
+    font-family: cursive;
+    word-spacing: 5px; }
+
+  section#seccion-uno {
+    height: 310px; } }
+@media only screen and (max-width: 375px) {
+  h1.titulo {
+    font-size: 30px; }
+
+  div.sub-titulo {
+    margin-top: 40px;
+    font-size: 15px; }
+
+  div.sombra {
+    padding: 50px; } }
 #seccion-uno {
   margin-top: -25px;
   background-image: url(../img/img-1.jpg);
   height: 400px;
   background-size: cover;
-  background-position: center no repeat; }
+  background-position: center top; }
 
 .sombra {
   background-color: rgba(0, 125, 157, 0.8);
   padding: 40px;
   width: 90%;
-  box-sizing: border-box;
   height: auto;
   margin: auto; }
+
+.titulo {
+  font-size: 90px;
+  color: #FA8072;
+  display: flex;
+  text-align: center;
+  justify-content: center; }
 
 .sub-titulo {
   color: white;
@@ -54,15 +94,8 @@
   justify-content: center;
   margin-top: 80px;
   font-size: 20px;
-  letter-spacing: 5px;
-  font-family: cursive !important; }
-
-.titulo {
-  font-size: 90px;
-  color: #FA8072;
-  display: flex;
-  text-align: center;
-  justify-content: center; }
+  font-family: cursive !important;
+  word-spacing: 30px; }
 
 /* seccion-dos*/
 .titulo__dos {
@@ -108,10 +141,8 @@
     border-radius: 5px;
     padding: 10px; }
   .seccion-tres .input {
-    width: 300px;
-    box-sizing: border-box;
-    padding: 15px;
-    margin: 10px;
+    width: 22vw;
+    height: 8vh;
     border-radius: 5px; }
 
 #seccion-cuatro {
